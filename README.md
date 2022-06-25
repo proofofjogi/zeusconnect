@@ -44,9 +44,11 @@ config.json looks like this initially:
 }
 ```
 
-The lnd_macaroon path needs to point to your admin.macaroon file inside your lnd folder. Example:
+That won't work like that. The lnd_macaroon path needs to point to your admin.macaroon file inside your lnd folder. See this example:
 ```sh
-"~/.lnd/data/chain/bitcoin/mainnet/admin.macaroon"
+{
+  "lnd_macaroon": "~/.lnd/data/chain/bitcoin/mainnet/admin.macaroon",
+  "port": "4204"
+}
 ```
-
-Configure config.json accordingly with the path on your node, wherever your .lnd folder is.
+Configure config.json accordingly using the path on your node, wherever your .lnd folder is.
