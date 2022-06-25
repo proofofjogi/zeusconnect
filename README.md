@@ -52,3 +52,5 @@ That won't work like that. The lnd_macaroon path needs to point to your admin.ma
 }
 ```
 Configure config.json accordingly using the path on your node, wherever your .lnd folder is.
+
+Note, by default this application runs on port 4204. You can change the port in the config file if you find a conflict on your node.
