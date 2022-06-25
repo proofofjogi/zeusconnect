@@ -1,0 +1,4 @@
+{
+  "lnd_macaroon": "~/.lnd/data/chain/bitcoin/mainnet/admin.macaroon",
+  "port": "4204"
+}

@@ -1,0 +1,4 @@
+{
+  "lnd_macaroon": "<configure/path/to/macaroon/here/>",
+  "port": "4204"
+}
