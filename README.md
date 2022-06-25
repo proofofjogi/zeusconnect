@@ -32,3 +32,21 @@ Install flask dependencies
 ```sh
 pip install -r requirements.txt
 ```
+
+##Configuration
+
+config.json looks like this initially:
+
+```sh
+{
+  "lnd_macaroon": "<configure/path/to/macaroon/here/>",
+  "port": "4204"
+}
+```
+
+The lnd_macaroon path needs to point to your admin.macaroon file inside your lnd folder. Example:
+```sh
+"~/.lnd/data/chain/bitcoin/mainnet/admin.macaroon"
+```
+
+Configure config.json accordingly with the path on your node, wherever your .lnd folder is.
