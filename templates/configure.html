@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1 class="pt-5">Not configured</h1>
+    <p>Zeus Connect is not configured. Modification of the config.json file is needed. Add in a valid lnd macaron path for this app to work.</p>
+    <p>An example path reads like so:</p>
+    <p><span style="font-family: monospace">~/.lnd/data/chain/bitcoin/mainnet/admin.macaroon</span></p>
+    <p>Go to <span style="font-family: monospace">zeusconnect/config.json</span> and enter correct path to the <span style="font-family: monospace">admin.macaroon</span> file on your node</p>
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1 class="pt-5">Zeus Connect</h1>
+    <p>A helper that helps you connect your Zeus lightning wallet to your lnd node</p>
+
+    <h2>Macaroon String</h2>
+    <p>Paste this macaroon hex into your Zeus Wallet to connect. Your macaroon hex is:</p>
+    <p><span style="width: 95%; word-wrap:break-word; display:inline-block;">{{ macaroon }}</span></p>
+
+    <h2>Scan QR Code</h2>
+    <p>You can also scan this QR code of the macaroon</p>
+    <img src="{{ url_for('static', filename=qr) }}" style="max-width: 300px;">
+{% endblock content %}
+
+
