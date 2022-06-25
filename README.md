@@ -33,7 +33,7 @@ Install flask dependencies
 pip install -r requirements.txt
 ```
 
-##Configuration
+## Configuration
 
 config.json looks like this initially:
 
