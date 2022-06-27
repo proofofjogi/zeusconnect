@@ -2,40 +2,41 @@
 Zeus Connect helps you connect your lnd lightning node to your Zeus wallet
 
 ## What is zeusconnect for?
-Easier connection between your lndlightning node and your mobile zeus wallet
+Easier connection between your lnd lightning node and your mobile zeus wallet
 
 ## Installation
-Clone repository on your node:
+First, clone repository to your node. Run this in your terminal:
 
 ```sh
 git clone https://github.com/proofofjogi/zeusconnect.git
 ```
 
-cd into the repository
+And then move into the repository directory
 ```sh
 cd zeusconnect
 ```
 
-Make virtual environment and activate
-
-(Requires python3-venv)
+Make a virtual environment and activate it. This requires python3-venv to be installed. Run
 ```sh
 sudo apt install python3-venv
 ```
+
+to install python3-venv. Next we make a virtual environment named env and activate it:
 
 ```sh
 python3 -m venv env
 source env/bin/activate
 ```
 
-Install flask dependencies
+Now we can install al python dependencies:
 ```sh
 pip install -r requirements.txt
 ```
+That's it for the installation. Now we need to configure zeusconnect.
 
 ## Configuration
 
-config.json looks like this initially:
+Within the zeusconnect folder, there's a confiduration file. It is config.json looks like this initially:
 
 ```sh
 {
@@ -44,7 +45,7 @@ config.json looks like this initially:
 }
 ```
 
-That won't work like that. The lnd_macaroon path needs to point to your admin.macaroon file inside your lnd folder. See this example:
+That file won't work like that. The lnd_macaroon path needs to point to your admin.macaroon file inside your lnd folder. See this example:
 ```sh
 {
   "lnd_macaroon": "~/.lnd/data/chain/bitcoin/mainnet/admin.macaroon",
@@ -57,7 +58,7 @@ Note, by default this application runs on port 4204. You can change the port in 
 
 ## Run
 
-You can now run Zeus Connect on your node. 
+You can now run zeusconnect.py on your node. Make sure that the environmet is active to run.
 
 ```sh
 python zeusconnect.py
@@ -81,4 +82,4 @@ Will generate this output:
  * Debugger PIN: 116-705-899
 ```
 
-You can access it on your IP address, in this example it is 192.168.1.33:4204. You will be able to connect Zeus to your node using the Hex String or the QR code.
+You can access zeusconnect on your node IP address, in this example it is served at http://192.168.1.33:4204. You will be able to connect Zeus to your node using the hex string output.
